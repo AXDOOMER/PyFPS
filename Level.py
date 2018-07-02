@@ -19,10 +19,11 @@ class Level:
 					print("#COMMENT")
 				elif words[0] == "thing" and len(words) == 6:
 					print(words[1])
+				# Use variadic constructor because there's more than squares and triangles
 				elif words[0] == "poly" and len(words) == 20:
 					print(words[1])
 				else:
-					print("INVALID LINE IGNORED AT {}".format(self.__lineCount))
+					print("INVALID LINE IGNORED AT", self.__lineCount)
 
 	# Constructor
 	def __init__(self, filename):
@@ -30,9 +31,9 @@ class Level:
 
 	# Method
 	def displayCount(self):
-		print("Total lines {}".format(self.__lineCount))
+		print("Total lines:", self.__lineCount)
 
 
 lvl = Level("file.txt")
-#lvl.displayCount()
+lvl.displayCount()
 
