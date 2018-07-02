@@ -4,6 +4,8 @@
 * Install PIL for the images: `sudo pip3 install pillow`
 * Install OpenGL: `sudo pip3 install PyOpenGL PyOpenGL_accelerate`
 
+See the [Wiki](../../wiki) for documentation.
+
 ## Usage
 
 I don't know how to run it. I guess it works if you do `python3 Level.py` or make it executable.
